@@ -1,0 +1,167 @@
+body {
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  background: #f5f6fa;
+  color: #2f3640;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #273c75;
+}
+
+#main-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px 4px #e6e6e6;
+}
+
+nav #main-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+  font-size: 17px;
+}
+
+nav #main-menu li:hover a {
+  background: #c23616;
+  transition: all 0.3s;
+}
+
+#toggle {
+  display: none;
+  background: #353b48;
+  color: #fff;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.logo {
+  display: none;
+}
+
+.login-box {
+  background-color: #f0f4ff; /* Nền xanh nhạt của form */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #00274d; /* Màu xanh đậm */
+}
+
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.password-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password-group input {
+  flex: 1;
+}
+
+.password-group .toggle-password {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+button {
+  background-color: #0056b3; /* Màu xanh của nút */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.bt1 {
+  background-color: #0056b3;
+  height: 100%;
+}
+button:hover {
+  background-color: #003f7f; /* Màu xanh đậm hơn khi hover */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+.delA {
+  background-color: white;
+}
+@media screen and (max-width: 2560px) and (min-width: 1441px) {
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+}
+@media screen and (max-width: 900px) and (min-width: 768px) {
+}
+@media screen and (max-width: 767px) {
+  .login-box {
+    background-color: #f0f4ff; /* Nền xanh nhạt của form */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  #main-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #toggle {
+    background-color: #273c75;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 300px;
+    display: block;
+    width: 70px;
+    height: 100%;
+  }
+
+  .logo1 {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+}

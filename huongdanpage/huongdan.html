@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đo nhiệt độ và độ ẩm</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="..\image\LGBT.png">
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database-compat.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="huongdan.js"></script>
+    <link rel="stylesheet" href="huongdan.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <img class="logo" src="..\image\LGBT.png">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <img class="logo1" src="..\image\LGBT.png" style="width:5%">
+                    <li>
+                        <a href="..\index.html">Giám sát nhiệt độ và độ ẩm</a>
+                    </li>
+                    <li>
+                        <a href="..\thietlappage\thietlap.html">Thiết lập cảnh báo</a>
+                    </li>
+                    <li>
+                        <a href="huongdan.html">Hướng dẫn sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="..\aboutpage\about.html">About LGBT Group</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <h2 class="text-center">Cách thiết lập cảnh báo</h2>
+    <div class="mt-5">
+        <div class="ml-1 d-flex col row justify-content-center justify-content-around">
+            <img class="imga" src="..\image\Input.PNG">
+            <div class="col-md-5">
+                <p class="mt-4 text-center">Các bước thiết lập cảnh báo</p>
+                <p>Bước 1: Nhập khoảng nhiệt độ bắt đầu</p>
+                <p>Bước 2: Nhập khoảng nhiệt độ kết thúc</p>
+                <p>Bước 3: Nhập lời nhắc cảnh báo</p>
+                <p>Bước 4: Ấn "Thêm cảnh báo" để hoàn tất thiết lập</p>
+                <p>Ví dụ: Nếu bạn muốn thiết lập cho thiết bị sẽ phát cảnh báo khi nhiệt độ lớn hơn 15°C và nhỏ hơn 20°C
+                    thì bạn phải điền khoảng nhiệt độ
+                    bắt đầu là 15 và khoảng nhiệt độ kết thúc là 20 kèm theo lời nhắc bạn muốn, sau đó ấn nút thêm cảnh
+                    báo để cảnh báo được
+                    thiết lập thành công </p>
+            </div>
+        </div>
+        <div class="ml-1 mt-5 d-flex col row justify-content-center justify-content-around">
+            <img class="imga" src="..\image\data.PNG">
+            <div class="mt-4 col-md-5">
+
+                <p>Các cảnh báo được thiết lập sẽ được hiển thị ở bên ngay bên dưới chỗ thiết lập cảnh báo, nếu bạn muốn
+                    xóa bớt cảnh báo không cần thiết hãy ấn vào nút "Xóa cảnh báo" như hình bên
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Firebase SDK -->
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/13f09ba1d5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
